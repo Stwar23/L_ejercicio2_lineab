@@ -86,7 +86,6 @@
             style: style
         });
         var hidrografia_js = L.geoJson(hidrografia_data);
-        var departamentos_js = L.geoJson(deptos_data);
         var ciudades_js = L.geoJson(ciudades_data, {
             pointToLayer: function (feature, latlng) {
                 return L.circleMarker(latlng, styleCiudades(feature));
@@ -101,7 +100,6 @@
         var overlayMaps = {
             "Paises": paises_js,
             "Hidrografia": hidrografia_js,
-            //"Departamentos": departamentos_js,
             "Ciudades": ciudades_js
         };
 
